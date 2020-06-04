@@ -48,6 +48,10 @@ public class CadeasTest {
         boolean expResult2=true;
         boolean result2=Cadeas.eNumeroEnt(str2);
         assertEquals(expResult2,result2);
+        String str3="0";
+        boolean expResult3=true;
+        boolean result3=Cadeas.eNumeroEnt(str3);
+        assertEquals(expResult3,result3);
     }
 
     @Disabled
