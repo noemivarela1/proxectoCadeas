@@ -37,6 +37,7 @@ public class CadeasTest {
     public void tearDown() {
     }
 
+    @Disabled
     @Test
     public void testENumeroEnt() {
         System.out.println("eNumeroEnt");
@@ -63,5 +64,29 @@ public class CadeasTest {
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
-    
+
+    /**
+     * Test of numVogais method, of class Cadeas.
+     */
+    @Test
+    public void testNumVogais() {
+        System.out.println("numVogais");
+        String str = "";
+        int expResult = 0;
+        int result = Cadeas.numVogais(str);
+        assertEquals(expResult, result);
+        String str2 = "aeiou";
+        int expResult2 = 5;
+        int result2 = Cadeas.numVogais(str2);
+        assertEquals(expResult2, result2);
+        String str3 = "murciela G o";
+        int expResult3 = 5;
+        int result3 = Cadeas.numVogais(str3);
+        assertEquals(expResult3, result3);
+        String str4 = "1234";
+        int expResult4 = 1;
+        int result4 = Cadeas.numVogais(str4);
+        assertNotEquals(expResult4, result4);
+ 
+    } 
 }
