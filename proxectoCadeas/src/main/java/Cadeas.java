@@ -22,6 +22,7 @@ public class Cadeas {
         System.out.println("Cambio feito en remoto");
         String strNum="234";
         System.out.println("A cadea é un número:"+eNumeroEnt(strNum));
-        System.out.println("Fin");
+        String strNum2="a@";
+        System.out.println("A cadea é un número:"+eNumeroEnt(strNum2));
     }
 }
